@@ -1,0 +1,151 @@
+.footer_container {
+  display: flex;
+  justify-content: center;
+  padding: 50px 20px;
+}
+.black {
+  background: #1c0d04;
+}
+.white {
+  background: #fff;
+}
+.footer_container_box {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 90%;
+}
+.ui_footer_left {
+  width: 15%;
+}
+.ui_footer_left > img {
+  height: 76px;
+  margin-top: 19px;
+  max-width: 100%;
+}
+.ui_footer_middle {
+  width: 45%;
+  margin-top: 20px;
+}
+.ui_footer_middle_div {
+  display: flex;
+  justify-content: space-around;
+}
+.ui_footer_middle_info,
+.ui_footer_middle_products,
+.ui_footer_middle_community {
+  width: 33.3%;
+}
+.my_16 {
+  color: #fff;
+  font-weight: bolder;
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 4px !important;
+}
+.links > p {
+  margin: 0;
+}
+.links_opener {
+  color: #eee;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 200%;
+  font-weight: 600;
+}
+.ui_footer_container {
+  display: flex;
+  flex-direction: column;
+}
+.links_opener::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #ff783c;
+  transition: width 0.3s;
+}
+.links_opener:hover {
+  color: #ff783c;
+}
+.links_opener:hover::after {
+  width: 100%;
+}
+.social_links {
+  display: flex;
+  justify-content: space-between;
+}
+.social_links > a {
+  margin-right: 6px;
+}
+.social_icons {
+  width: 42px;
+}
+.my_16_icons {
+  color: #fff;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  margin-top: 16px !important;
+  margin-bottom: 16px !important;
+}
+.row {
+  display: flex;
+  align-items: center;
+}
+.row_icons {
+  width: 18px;
+  height: 18px;
+  margin-right: 17px;
+}
+.row > a {
+  color: #eee;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 200%;
+}
+
+@media screen and (max-width: 1024px) {
+  .footer_container_box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .ui_footer_left,
+  .ui_footer_middle {
+    width: 100%;
+    height: max-content;
+  }
+  .ui_footer_middle_div {
+    flex-direction: row;
+    width: 100%;
+    margin: 0;
+  }
+  .ui_footer_right {
+    width: 90%;
+    height: max-content;
+    padding: 0;
+  }
+
+  .ui_footer_right > div {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .ui_footer_middle_div {
+    flex-direction: column;
+  }
+  .ui_footer_middle_community,
+  .ui_footer_middle_products,
+  .ui_footer_middle_info {
+    width: 100%;
+    padding: 2%;
+  }
+  .ui_footer_right > div {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,32 @@
+.Header {
+  height: 245px;
+  padding-top: 73px;
+  padding-left: 65px;
+  box-sizing: border-box;
+  background-image: url(https://files.codingninjas.in/0000000000002471.png);
+}
+
+.Header_first {
+  margin: 0;
+  font-size: 60px;
+  color: #fff;
+  font-weight: 700;
+}
+.Header_second {
+  color: #fff;
+  font-size: 20px;
+  margin-top: 2px;
+  margin-left: 4px;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 720px) {
+  .Header {
+    padding-left: 45px;
+    padding-bottom: 28px;
+  }
+
+  .Header_first {
+    font-size: 44px;
+  }
+}
